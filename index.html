@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MakeFav: Instant Website Favicon Maker</title>
+    <meta name="description"
+        content="Instantly fetch, display and download favicons from any website. Simple, fast, and free favicon API for developers.">
+    <link rel="stylesheet" href="src/index.css">
+</head>
+
+<body class="site-wrapper">
+    <div class="main-container">
+        <!-- Header Section -->
+        <header class="primary-header">
+            <div class="header-content">
+                <div class="brand-area">
+                    <h1 class="main-title">MakeFav/</h1>
+                    <p class="sub-heading">Instantly Make and download favicon for any website.</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="content-body">
+            <!-- Stats Section -->
+            <section class="usage-stats-box">
+                <div class="stats-inner">
+                    <div class="text-center">
+                        <div class="stats-number">30K+</div>
+                        <div class="stats-label">Weekly Users Usage</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA Section -->
+            <section class="action-area">
+                <a href="generator.html" class="cta-button">
+                    <div class="button-content">
+                        <span class="button-label">
+                            <svg class="icon-m" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z">
+                                </path>
+                            </svg>
+                            <span>Convert Image to Favicon</span>
+                        </span>
+                        <svg class="icon-m" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                            </path>
+                        </svg>
+                    </div>
+                </a>
+            </section>
+
+            <!-- FAQ Section -->
+            <section class="faq-container">
+                <h2 class="section-heading">FAQ</h2>
+                <div class="accordion-list">
+                    <div class="accordion-item">
+                        <button class="accordion-trigger" onclick="toggleFAQ(this)">
+                            <h3 class="accordion-title">What is MakeFav?
+                                <svg class="arrow-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </h3>
+                        </button>
+                        <div class="accordion-panel hidden">
+                            <p>
+                                MakeFav is a simple and efficient service that allows you to make the favicon (website
+                                icon) for any
+                                website. Just provide a image, and we'll return the associated favicons. It's
+                                perfect for
+                                developers, designers, or anyone who needs quick needv create website icons.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-trigger" onclick="toggleFAQ(this)">
+                            <h3 class="accordion-title">What is a favicon?
+                                <svg class="arrow-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </h3>
+                        </button>
+                        <div class="accordion-panel hidden">
+                            <p>
+                                A favicon (short for "favorite icon") is a small, iconic image that represents a
+                                website. It's
+                                typically displayed in the browser's address bar, next to the site's name in bookmarks,
+                                and in browser
+                                tabs.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-trigger" onclick="toggleFAQ(this)">
+                            <h3 class="accordion-title">Why are favicons important?
+                                <svg class="arrow-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </h3>
+                        </button>
+                        <div class="accordion-panel hidden">
+                            <p>
+                                Favicons enhance brand recognition, improve user experience by making sites easily
+                                identifiable in tabs
+                                and bookmarks, and add a professional touch to websites.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-trigger" onclick="toggleFAQ(this)">
+                            <h3 class="accordion-title">What file formats are used for favicons?
+                                <svg class="arrow-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </h3>
+                        </button>
+                        <div class="accordion-panel hidden">
+                            <p>
+                                Common favicon formats include ICO, PNG, GIF, and SVG. ICO was traditionally the most
+                                widely supported,
+                                but modern browsers support PNG and SVG, which offer better quality and scalability.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-trigger" onclick="toggleFAQ(this)">
+                            <h3 class="accordion-title">How does MakeFav work?
+                                <svg class="arrow-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </h3>
+                        </button>
+                        <div class="accordion-panel hidden">
+                            <p>
+                                MakeFav follows a multi-step process to retrieve a website's favicon: 1. pick a image
+                                that created for your site in the
+                                drag & drop box above (e.g., how to use box) 2. Click the "Generat Favicons" button
+                                below the icon drag & drop BOX 3. You can
+                                choose between default size or larger size version
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-trigger" onclick="toggleFAQ(this)">
+                            <h3 class="accordion-title">Is there a rate limit for using MakeFav?
+                                <svg class="arrow-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </h3>
+                        </button>
+                        <div class="accordion-panel hidden">
+                            <p>
+                                While we strive to provide a reliable service, we do implement rate limiting to ensure
+                                fair usage. For
+                                specific details on rate limits or if you require high-volume access, please contact us
+                                directly.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="main-footer">
+        <div class="footer-grid-wrapper">
+            <div class="bottom-bar">
+                <div class="copyright">
+                    © <span>2026</span> webmaster.studio ·
+                    <a href="api.html">Free Favicon API</a> ·
+                    <a href="top.html">Top 1000</a> ·
+                    <a href="https://x.com/we_webmaster">X (Twitter)</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleFAQ(btn) {
+            const panel = btn.nextElementSibling;
+            const icon = btn.querySelector('.arrow-icon');
+            panel.classList.toggle('hidden');
+            icon.style.transform = panel.classList.contains('hidden') ? 'rotate(0deg)' : 'rotate(180deg)';
+        }
+    </script>
+</body>
+
+</html>
